@@ -50,6 +50,10 @@ const StringSchemaWithOptions = new SimpleSchema({
         type: String,
         regEx: SimpleSchema.RegEx.Id
     },
+    tags: {
+        type: [String],
+        optional: true
+    },
     createdAt: {
         type: Date,
         autoValue: () => new Date(),
